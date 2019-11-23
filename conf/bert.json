@@ -1,0 +1,4 @@
+{
+    "pretrained": "bert-base-uncased",
+    "cache_dir": ".cache"
+}

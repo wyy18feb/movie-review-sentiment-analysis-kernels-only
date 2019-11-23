@@ -1,0 +1,11 @@
+{
+    "path": ".data/train.tsv",
+    "limit": 1600,
+    "ratio": "8:1:1",
+    "batch_size":
+    {
+        "train": 128,
+        "evaluate": 10,
+        "test": 1
+    }
+}
