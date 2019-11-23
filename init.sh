@@ -9,8 +9,8 @@ curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer 
 
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
 echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
-echo "eval $(pyenv init -)" >> ~/.bash_profile
-echo "eval $(pyenv virtualenv-init -)" >> ~/.bash_profile
+echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
+echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bash_profile
 source ~/.bash_profile
 
 pyenv install 3.6.8
