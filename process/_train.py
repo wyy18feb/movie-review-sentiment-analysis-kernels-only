@@ -20,9 +20,9 @@ def train(model, dataloader, epochs, evaluate_steps, save_steps, save_dir):
         for x, y in dataloader:
             iterations += 1
             model.train()
+            optimizer.zero_grad()
             loss, _ = model(x, labels=y)
             logger.debug('y=%s', y)
-            optimizer.zero_grad()
             loss.backward()
             optimizer.step()
             if evaluate_steps and iterations % evaluate_steps == 0:
